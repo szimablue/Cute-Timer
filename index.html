@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cute Pomodoro Timer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🍓 Sena's Cute Timer 🍓</h1>
+    <div class="mascot">
+<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXcxMG9hOHlmZTA3b2U5cGlsMjY4c2s2YThibXl1NjdkaWxlZWxjbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/aGVvqGKFOXIvC/giphy.gif" alt="Cute Mascot">
+</div>
+
+<div id="status">📚 Study Time</div>
+
+<hr>
+<h2>⏱️ Stopwatch</h2>
+<div id="stopwatch">00:00</div>
+<div class="buttons">
+  <button onclick="startStopwatch()">Start</button>
+  <button onclick="pauseStopwatch()">Pause</button>
+  <button onclick="resetStopwatch()">Reset</button>
+</div>
+
+
+
+<div class="custom-time">
+  <label for="customMinutes">Set Study Minutes:</label>
+  <input type="number" id="customMinutes" value="25" min="1" max="180">
+  <button onclick="setCustomTime()">Set</button>
+</div>
+
+    <div id="timer">25:00</div>
+    <div class="buttons">
+      <button onclick="startTimer()">Start</button>
+      <button onclick="pauseTimer()">Pause</button>
+      <button onclick="resetTimer()">Reset</button>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
